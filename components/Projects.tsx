@@ -18,7 +18,7 @@ const projects: {
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 bg-[#0c0a13]">
+    <section id="projects" className="py-24 px-6 bg-[#1e1a2e]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">Projects</span>
@@ -29,7 +29,7 @@ export default function Projects() {
           {projects.map((p) => (
             <div
               key={p.title}
-              className="card-hover bg-[#110e1e] border border-[#1e1a2e] rounded-2xl p-6 flex flex-col"
+              className="card-hover bg-[#1e1830] border border-[#2a2440] rounded-2xl p-6 flex flex-col"
             >
               {p.wip && (
                 <span className="text-xs bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 rounded-full px-2 py-0.5 w-fit mb-3">

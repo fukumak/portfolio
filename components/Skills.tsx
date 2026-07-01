@@ -23,7 +23,7 @@ const categories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 px-6 bg-[#0a0812]">
+    <section id="skills" className="py-24 px-6 bg-[#0f0d1a]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">Skills</span>
@@ -34,7 +34,7 @@ export default function Skills() {
           {categories.map((cat) => (
             <div
               key={cat.label}
-              className="bg-[#110e1e] border border-[#1e1a2e] rounded-2xl p-6"
+              className="bg-[#1e1830] border border-[#2a2440] rounded-2xl p-6"
             >
               <h3 className="text-sm font-semibold text-[#a78bfa]/60 mb-4 uppercase tracking-wider">
                 {cat.label}

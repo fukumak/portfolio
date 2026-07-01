@@ -39,7 +39,7 @@ export default async function YouTube() {
   const videos = await fetchVideos();
 
   return (
-    <section id="youtube" className="py-24 px-6 bg-[#0a0812]">
+    <section id="youtube" className="py-24 px-6 bg-[#0f0d1a]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">YouTube</span>
@@ -66,7 +66,7 @@ export default async function YouTube() {
                 href={`https://www.youtube.com/watch?v=${v.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card-hover bg-[#110e1e] border border-[#1e1a2e] rounded-2xl overflow-hidden group"
+                className="card-hover bg-[#1e1830] border border-[#2a2440] rounded-2xl overflow-hidden group"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

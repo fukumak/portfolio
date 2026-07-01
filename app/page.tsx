@@ -10,7 +10,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0c0a13] text-[#f0e6ff]">
+    <div className="min-h-screen bg-[#1e1a2e] text-[#f0e6ff]">
       <Navbar />
       <Hero />
       <About />
@@ -20,7 +20,7 @@ export default function Home() {
       <WorkHistory />
       <Certifications />
       <Contact />
-      <footer className="text-center py-8 text-[#c4b5fd]/30 text-sm border-t border-[#1e1a2e]">
+      <footer className="text-center py-8 text-[#c4b5fd]/30 text-sm border-t border-[#2a2440]">
         © 2025 Fukumoto. Built with Next.js & ClaudeCode.
       </footer>
     </div>

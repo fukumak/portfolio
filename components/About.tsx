@@ -18,7 +18,7 @@ const strengths = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 bg-[#0c0a13]">
+    <section id="about" className="py-24 px-6 bg-[#1e1a2e]">
       <div className="max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-2 text-center">
         About <span className="gradient-text">Me</span>
@@ -29,7 +29,7 @@ export default function About() {
         {strengths.map((s) => (
           <div
             key={s.title}
-            className="card-hover bg-[#110e1e] border border-[#1e1a2e] rounded-2xl p-6"
+            className="card-hover bg-[#1e1830] border border-[#2a2440] rounded-2xl p-6"
           >
             <div className="text-4xl mb-4">{s.icon}</div>
             <h3 className="text-lg font-semibold mb-2 text-[#f0e6ff]">{s.title}</h3>

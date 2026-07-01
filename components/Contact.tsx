@@ -1,13 +1,13 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-[#0c0a13]">
+    <section id="contact" className="py-24 px-6 bg-[#1e1a2e]">
       <div className="max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-2 text-center">
         <span className="gradient-text">Contact</span>
       </h2>
       <p className="text-[#c4b5fd]/50 text-center mb-16">お気軽にご連絡ください</p>
 
-      <div className="max-w-lg mx-auto bg-[#110e1e] border border-[#1e1a2e] rounded-2xl p-8 text-center">
+      <div className="max-w-lg mx-auto bg-[#1e1830] border border-[#2a2440] rounded-2xl p-8 text-center">
         <p className="text-[#c4b5fd]/60 mb-8 leading-relaxed">
           転職・業務委託・技術相談など、お気軽にGitHubまたは
           YouTubeのコミュニティからご連絡ください。
