@@ -13,7 +13,14 @@ const projects: {
     github: "https://github.com/fukumak/portfolio",
     wip: false,
   },
-  // ここにプロジェクトを追加していきます
+  {
+    title: "ポモドーロタイマー",
+    desc: "25分集中・5分休憩のポモドーロテクニックをブラウザで実践できるタイマーアプリ。円形プログレスリング・自動モード切替・セッション履歴など搭載。HTML/CSS/JS のみで動作。",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/fukumak/pomodoro-timer",
+    demo: "https://fukumak.github.io/pomodoro-timer",
+    wip: false,
+  },
 ];
 
 export default function Projects() {
