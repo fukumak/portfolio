@@ -14,6 +14,13 @@ const projects: {
     wip: false,
   },
   {
+    title: "マニュアル作成ツール",
+    desc: "「ブロック」を組み合わせてステップ形式の手順書を作成できるWebアプリ。ドラッグ&ドロップでの並び替え、インライン編集、プレビュー表示に対応。",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    demo: "https://manual-tool-murex.vercel.app/",
+    wip: true,
+  },
+  {
     title: "ポモドーロタイマー",
     desc: "25分集中・5分休憩のポモドーロテクニックをブラウザで実践できるタイマーアプリ。円形プログレスリング・自動モード切替・セッション履歴など搭載。HTML/CSS/JS のみで動作。",
     tags: ["HTML", "CSS", "JavaScript"],
