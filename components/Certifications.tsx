@@ -3,36 +3,36 @@ const certs = [
     name: "AWS Certified Cloud Practitioner",
     abbr: "CLF",
     org: "Amazon Web Services",
-    color: "from-orange-500/20 to-orange-600/10 border-orange-500/30 text-orange-300",
+    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#d97706]",
   },
   {
     name: "AWS Certified Solutions Architect – Associate",
     abbr: "SAA",
     org: "Amazon Web Services",
-    color: "from-orange-500/20 to-orange-600/10 border-orange-500/30 text-orange-300",
+    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#d97706]",
   },
   {
     name: "AWS Certified Developer – Associate",
     abbr: "DVA",
     org: "Amazon Web Services",
-    color: "from-orange-500/20 to-orange-600/10 border-orange-500/30 text-orange-300",
+    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#d97706]",
   },
   {
     name: "ITパスポート",
     abbr: "IP",
     org: "IPA 独立行政法人情報処理推進機構",
-    color: "from-blue-500/20 to-blue-600/10 border-blue-500/30 text-blue-300",
+    color: "from-[#292524]/10 to-[#292524]/5 border-[#292524]/20 text-[#292524]/80",
   },
 ];
 
 export default function Certifications() {
   return (
-    <section id="certs" className="py-24 px-6 bg-[#0f0d1a]">
+    <section id="certs" className="py-24 px-6 bg-[#f3ead9]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">Certifications</span>
         </h2>
-        <p className="text-[#c4b5fd]/50 text-center mb-16">保有資格</p>
+        <p className="text-[#292524]/60 text-center mb-16">保有資格</p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {certs.map((c) => (

@@ -15,27 +15,27 @@ const history = [
 
 export default function WorkHistory() {
   return (
-    <section id="history" className="py-24 px-6 bg-[#1e1a2e]">
+    <section id="history" className="py-24 px-6 bg-[#fdf8f1]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">Career</span>
         </h2>
-        <p className="text-[#c4b5fd]/50 text-center mb-16">職歴・実績</p>
+        <p className="text-[#292524]/60 text-center mb-16">職歴・実績</p>
 
-        <div className="relative border-l border-[#2a2440] ml-4 md:ml-0 md:border-l-0">
+        <div className="relative border-l border-[#292524]/10 ml-4 md:ml-0 md:border-l-0">
           {history.map((h, i) => (
             <div key={i} className="md:grid md:grid-cols-[200px_1fr] gap-8 mb-12">
               <div className="md:text-right">
-                <span className="text-[#a78bfa] text-sm font-mono">{h.period}</span>
-                <p className="text-[#c4b5fd]/50 text-sm mt-1">{h.company}</p>
+                <span className="text-[#b45309] text-sm font-mono">{h.period}</span>
+                <p className="text-[#292524]/60 text-sm mt-1">{h.company}</p>
               </div>
-              <div className="bg-[#1e1830] border border-[#2a2440] rounded-2xl p-6 ml-8 md:ml-0 relative">
-                <div className="absolute -left-[41px] md:hidden top-6 w-3 h-3 rounded-full bg-[#7c3aed]" />
-                <h3 className="text-lg font-semibold text-[#f0e6ff] mb-4">{h.role}</h3>
+              <div className="bg-[#292524]/5 border border-[#292524]/10 rounded-2xl p-6 ml-8 md:ml-0 relative">
+                <div className="absolute -left-[41px] md:hidden top-6 w-3 h-3 rounded-full bg-[#d97706]" />
+                <h3 className="text-lg font-semibold text-[#292524] mb-4">{h.role}</h3>
                 <ul className="space-y-2">
                   {h.items.map((item) => (
-                    <li key={item} className="text-[#c4b5fd]/60 text-sm flex gap-2">
-                      <span className="text-[#a78bfa] mt-0.5">▸</span>
+                    <li key={item} className="text-[#292524]/70 text-sm flex gap-2">
+                      <span className="text-[#d97706] mt-0.5">▸</span>
                       {item}
                     </li>
                   ))}

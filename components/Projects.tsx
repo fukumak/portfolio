@@ -32,31 +32,31 @@ const projects: {
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 bg-[#1e1a2e]">
+    <section id="projects" className="py-24 px-6 bg-[#fdf8f1]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">Projects</span>
         </h2>
-        <p className="text-[#c4b5fd]/50 text-center mb-16">個人・サイドプロジェクト</p>
+        <p className="text-[#292524]/60 text-center mb-16">個人・サイドプロジェクト</p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
             <div
               key={p.title}
-              className="card-hover bg-[#1e1830] border border-[#2a2440] rounded-2xl p-6 flex flex-col"
+              className="card-hover bg-[#292524]/5 border border-[#292524]/10 rounded-2xl p-6 flex flex-col"
             >
               {p.wip && (
-                <span className="text-xs bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 rounded-full px-2 py-0.5 w-fit mb-3">
+                <span className="text-xs bg-yellow-500/15 text-yellow-700 border border-yellow-500/40 rounded-full px-2 py-0.5 w-fit mb-3">
                   WIP
                 </span>
               )}
-              <h3 className="text-lg font-semibold text-[#f0e6ff] mb-2">{p.title}</h3>
-              <p className="text-[#c4b5fd]/60 text-sm leading-relaxed flex-1">{p.desc}</p>
+              <h3 className="text-lg font-semibold text-[#292524] mb-2">{p.title}</h3>
+              <p className="text-[#292524]/70 text-sm leading-relaxed flex-1">{p.desc}</p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {p.tags.map((t) => (
                   <span
                     key={t}
-                    className="text-xs px-2 py-1 bg-violet-500/10 text-[#a78bfa] border border-violet-500/20 rounded-full"
+                    className="text-xs px-2 py-1 bg-[#d97706]/10 text-[#d97706] border border-[#d97706]/20 rounded-full"
                   >
                     {t}
                   </span>
@@ -68,7 +68,7 @@ export default function Projects() {
                     href={p.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#c4b5fd]/40 hover:text-[#a78bfa] transition-colors"
+                    className="text-xs text-[#292524]/50 hover:text-[#d97706] transition-colors"
                   >
                     GitHub →
                   </a>
@@ -78,7 +78,7 @@ export default function Projects() {
                     href={p.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#a78bfa] hover:text-[#c4b5fd] transition-colors"
+                    className="text-xs text-[#d97706] hover:text-[#292524] transition-colors"
                   >
                     Demo →
                   </a>
@@ -88,8 +88,8 @@ export default function Projects() {
           ))}
 
           {/* Placeholder card */}
-          <div className="border border-dashed border-[#2e1a4e] rounded-2xl p-6 flex flex-col items-center justify-center text-center min-h-[200px]">
-            <p className="text-[#c4b5fd]/30 text-sm">今後追加予定</p>
+          <div className="border border-dashed border-[#292524]/20 rounded-2xl p-6 flex flex-col items-center justify-center text-center min-h-[200px]">
+            <p className="text-[#292524]/40 text-sm">今後追加予定</p>
           </div>
         </div>
       </div>

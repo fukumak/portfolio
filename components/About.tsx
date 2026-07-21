@@ -18,22 +18,22 @@ const strengths = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 bg-[#1e1a2e]">
+    <section id="about" className="py-24 px-6 bg-[#fdf8f1]">
       <div className="max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-2 text-center">
         About <span className="gradient-text">Me</span>
       </h2>
-      <p className="text-[#c4b5fd]/50 text-center mb-16">3つの強みが重なるエンジニア</p>
+      <p className="text-[#292524]/60 text-center mb-16">3つの強みが重なるエンジニア</p>
 
       <div className="grid md:grid-cols-3 gap-6">
         {strengths.map((s) => (
           <div
             key={s.title}
-            className="card-hover bg-[#1e1830] border border-[#2a2440] rounded-2xl p-6"
+            className="card-hover bg-[#292524]/5 border border-[#292524]/10 rounded-2xl p-6"
           >
             <div className="text-4xl mb-4">{s.icon}</div>
-            <h3 className="text-lg font-semibold mb-2 text-[#f0e6ff]">{s.title}</h3>
-            <p className="text-[#c4b5fd]/60 text-sm leading-relaxed">{s.desc}</p>
+            <h3 className="text-lg font-semibold mb-2 text-[#292524]">{s.title}</h3>
+            <p className="text-[#292524]/70 text-sm leading-relaxed">{s.desc}</p>
           </div>
         ))}
       </div>

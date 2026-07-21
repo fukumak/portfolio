@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#1e1a2e]/90 backdrop-blur-md border-b border-[#2a2440] shadow-sm" : ""
+        scrolled ? "bg-[#fdf8f1]/90 backdrop-blur-md border-b border-[#292524]/10 shadow-sm" : ""
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -33,10 +33,10 @@ export default function Navbar() {
         </a>
 
         {/* Desktop */}
-        <ul className="hidden md:flex gap-6 text-sm text-[#c4b5fd]/70">
+        <ul className="hidden md:flex gap-6 text-sm text-[#292524]/70">
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} className="hover:text-[#a78bfa] transition-colors font-medium">
+              <a href={l.href} className="hover:text-[#d97706] transition-colors font-medium">
                 {l.label}
               </a>
             </li>
@@ -45,7 +45,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-[#c4b5fd]/70 hover:text-[#a78bfa]"
+          className="md:hidden text-[#292524]/70 hover:text-[#d97706]"
           onClick={() => setOpen(!open)}
           aria-label="menu"
         >
@@ -56,13 +56,13 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-[#1e1a2e]/95 border-b border-[#2a2440] px-6 pb-4">
+        <div className="md:hidden bg-[#fdf8f1]/95 border-b border-[#292524]/10 px-6 pb-4">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block py-2 text-[#c4b5fd]/70 hover:text-[#a78bfa] transition-colors font-medium"
+              className="block py-2 text-[#292524]/70 hover:text-[#d97706] transition-colors font-medium"
             >
               {l.label}
             </a>
