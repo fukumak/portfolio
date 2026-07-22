@@ -5,9 +5,9 @@ export default function Contact() {
     <section id="links" className="py-24 px-6 bg-[#fdf8f1]">
       <div className="max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-2 text-center">
-        <span className="gradient-text">Links</span>
+        <span className="gradient-text">リンク</span>
       </h2>
-      <p className="text-[#292524]/60 text-center mb-16">つながる場所</p>
+      <p className="text-[#292524]/60 text-center mb-16">Links</p>
 
       <div className="max-w-sm mx-auto bg-[#292524]/5 border border-[#292524]/10 rounded-2xl p-8 flex flex-col items-center text-center">
         <div className="w-24 h-24 rounded-full overflow-hidden bg-[#292524]/10 mb-5 relative">
