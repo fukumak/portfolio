@@ -26,9 +26,9 @@ export default function Skills() {
     <section id="skills" className="py-24 px-6 bg-[#f3ead9]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
-          <span className="gradient-text">Skills</span>
+          <span className="gradient-text">スキル</span>
         </h2>
-        <p className="text-[#292524]/60 text-center mb-16">技術スタック</p>
+        <p className="text-[#292524]/60 text-center mb-16">Skills</p>
 
         <div className="grid md:grid-cols-2 gap-8">
           {categories.map((cat) => (

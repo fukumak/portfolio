@@ -2,10 +2,10 @@
 import { useState, useEffect } from "react";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#history", label: "Career" },
+  { href: "#about", label: "私について" },
+  { href: "#skills", label: "スキル" },
+  { href: "#projects", label: "プロジェクト" },
+  { href: "#history", label: "キャリア" },
   { href: "#certs", label: "資格" },
   { href: "#contact", label: "Contact" },
 ];

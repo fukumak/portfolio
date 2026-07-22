@@ -35,9 +35,9 @@ export default function Projects() {
     <section id="projects" className="py-24 px-6 bg-[#fdf8f1]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
-          <span className="gradient-text">Projects</span>
+          <span className="gradient-text">プロジェクト</span>
         </h2>
-        <p className="text-[#292524]/60 text-center mb-16">個人・サイドプロジェクト</p>
+        <p className="text-[#292524]/60 text-center mb-16">Projects</p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (

@@ -42,9 +42,9 @@ export default function WorkHistory() {
     <section id="history" className="py-24 px-6 bg-[#fdf8f1]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
-          <span className="gradient-text">Career</span>
+          <span className="gradient-text">キャリア</span>
         </h2>
-        <p className="text-[#292524]/60 text-center mb-16">職歴・実績</p>
+        <p className="text-[#292524]/60 text-center mb-16">Career</p>
 
         <div className="relative border-l border-[#292524]/10 ml-4 md:ml-0 md:border-l-0">
           <div className="md:grid md:grid-cols-[200px_1fr] gap-8">

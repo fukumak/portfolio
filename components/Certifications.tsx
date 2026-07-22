@@ -30,9 +30,9 @@ export default function Certifications() {
     <section id="certs" className="py-24 px-6 bg-[#f3ead9]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-center">
-          <span className="gradient-text">Certifications</span>
+          <span className="gradient-text">保有資格</span>
         </h2>
-        <p className="text-[#292524]/60 text-center mb-16">保有資格</p>
+        <p className="text-[#292524]/60 text-center mb-16">Certifications</p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {certs.map((c) => (
