@@ -2,7 +2,7 @@ const categories = [
   {
     label: "インフラ・ネットワーク",
     color: "bg-blue-500/10 text-blue-700 border-blue-500/30",
-    skills: ["Linux", "Windows Server", "TCP/IP", "DNS", "VLAN", "VPN", "Firewall"],
+    skills: ["Linux", "Windows Server", "TCP/IP", "VPN", "Firewall", "キッティング自動化", "Docker", "リバースプロキシ"],
   },
   {
     label: "セキュリティ",
@@ -10,14 +10,19 @@ const categories = [
     skills: ["セキュリティ監視", "脆弱性管理", "権限管理", "ログ分析", "インシデント対応"],
   },
   {
-    label: "クラウド",
+    label: "データベース",
     color: "bg-orange-500/10 text-orange-700 border-orange-500/30",
-    skills: ["AWS EC2", "AWS S3", "AWS IAM", "AWS VPC", "AWS Lambda"],
+    skills: ["MySQL", "Teradata", "SQL Server"],
+  },
+  {
+    label: "言語・Web技術",
+    color: "bg-green-500/10 text-green-700 border-green-500/30",
+    skills: ["VBA", "SQL", "HTML", "CSS", "PHP", "Java", "Python", "TypeScript", "WordPress"],
   },
   {
     label: "AI開発・自動化",
     color: "bg-purple-500/10 text-purple-700 border-purple-500/30",
-    skills: ["ClaudeCode", "Python", "TypeScript", "Next.js", "React", "Git", "GitHub"],
+    skills: ["ClaudeCode", "Next.js", "React", "Git", "GitHub"],
   },
 ];
 
