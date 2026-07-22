@@ -33,10 +33,10 @@ export default function Hero() {
             Projects を見る
           </a>
           <a
-            href="#contact"
+            href="#links"
             className="px-6 py-3 border border-[#292524]/15 hover:border-[#d97706] text-[#292524]/70 hover:text-[#d97706] rounded-full font-medium transition-colors"
           >
-            お問い合わせ
+            Links
           </a>
         </div>
 

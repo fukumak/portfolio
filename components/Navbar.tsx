@@ -7,7 +7,7 @@ const links = [
   { href: "#projects", label: "プロジェクト" },
   { href: "#history", label: "キャリア" },
   { href: "#certs", label: "資格" },
-  { href: "#contact", label: "Contact" },
+  { href: "#links", label: "Links" },
 ];
 
 export default function Navbar() {
