@@ -5,7 +5,6 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-  { href: "#youtube", label: "YouTube" },
   { href: "#history", label: "Career" },
   { href: "#certs", label: "資格" },
   { href: "#contact", label: "Contact" },
@@ -29,7 +28,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#hero" className="text-lg font-bold gradient-text">
-          Fukumotoのポートフォリオサイト
+          My Portfolio
         </a>
 
         {/* Desktop */}

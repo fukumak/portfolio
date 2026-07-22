@@ -22,7 +22,7 @@ const projects: {
   },
   {
     title: "ポモドーロタイマー",
-    desc: "25分集中・5分休憩のポモドーロテクニックをブラウザで実践できるタイマーアプリ。円形プログレスリング・自動モード切替・セッション履歴など搭載。HTML/CSS/JS のみで動作。",
+    desc: "作業中に適切なインターバルを取ることで集中力を維持したいという課題感から自作。タスクごとに時間を区切って管理できるようになり、業務を効率的に進められるように。円形プログレスリング・自動モード切替・セッション履歴など搭載。HTML/CSS/JS のみで動作。",
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/fukumak/pomodoro-timer",
     demo: "https://fukumak.github.io/pomodoro-timer",

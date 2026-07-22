@@ -10,9 +10,9 @@ const strengths = [
     desc: "ClaudeCodeを活用したAIアプリ開発。自動化・効率化ツールの構築が得意",
   },
   {
-    icon: "🎬",
-    title: "IT教育発信",
-    desc: "AIを活用してYouTubeでClaudeCode入門・セキュリティ入門などを初心者向けに発信中",
+    icon: "📈",
+    title: "業務改善の実績",
+    desc: "全店舗規模（タブレット約4,000台・トランシーバー約6,500台）の機器リプレイスやキッティング自動化、入出庫管理のシステム化などを推進",
   },
 ];
 
@@ -23,7 +23,7 @@ export default function About() {
       <h2 className="text-3xl font-bold mb-2 text-center">
         About <span className="gradient-text">Me</span>
       </h2>
-      <p className="text-[#292524]/60 text-center mb-16">3つの強みが重なるエンジニア</p>
+      <p className="text-[#292524]/60 text-center mb-16">現場知識と実装力で、業務改善を形にするエンジニア</p>
 
       <div className="grid md:grid-cols-3 gap-6">
         {strengths.map((s) => (

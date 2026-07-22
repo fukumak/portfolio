@@ -16,14 +16,14 @@ export default function Hero() {
           Welcome to my portfolio
         </p>
         <h1 className="text-5xl md:text-7xl font-bold mb-4">
-          <span className="gradient-text">Fukumotoの<br />ポートフォリオサイト</span>
+          <span className="gradient-text">My Portfolio</span>
         </h1>
-        <p className="text-xl md:text-2xl text-[#292524]/80 font-light mb-2">
-          インフラ・セキュリティ × AI開発 × IT教育発信
+        <p className="text-xl md:text-2xl text-[#292524]/80 font-bold mb-10">
+          インフラ・セキュリティ × AI開発 × 業務改善
         </p>
         <p className="text-[#292524]/60 max-w-lg mx-auto mb-10 leading-relaxed">
-          現場で培ったインフラ・セキュリティの知識と、ClaudeCodeを活用したAI開発を掛け合わせ、
-          初心者向けIT教育コンテンツも発信しています。
+          現場で培ったインフラ・セキュリティの知識とAI開発を組み合わせ、
+          業務改善ツールなどを開発しています。
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <a
@@ -49,14 +49,6 @@ export default function Hero() {
             className="hover:text-[#292524] transition-colors text-sm font-medium"
           >
             GitHub
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCJGiRvZIgvHNegEvJ7Jt3ZA"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-red-600 transition-colors text-sm font-medium"
-          >
-            YouTube
           </a>
         </div>
       </div>

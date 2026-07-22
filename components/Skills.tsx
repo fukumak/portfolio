@@ -15,7 +15,7 @@ const categories = [
     skills: ["AWS EC2", "AWS S3", "AWS IAM", "AWS VPC", "AWS Lambda"],
   },
   {
-    label: "AI・開発",
+    label: "AI開発・自動化",
     color: "bg-purple-500/10 text-purple-700 border-purple-500/30",
     skills: ["ClaudeCode", "Python", "TypeScript", "Next.js", "React", "Git", "GitHub"],
   },
