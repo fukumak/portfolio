@@ -23,6 +23,24 @@ const certs = [
     org: "IPA 独立行政法人情報処理推進機構",
     color: "from-[#292524]/10 to-[#292524]/5 border-[#292524]/20 text-[#292524]/80",
   },
+  {
+    name: "WEBライティング能力検定 1級",
+    abbr: "Web1級",
+    org: "",
+    color: "from-[#b45309]/20 to-[#92400e]/10 border-[#b45309]/30 text-[#b45309]",
+  },
+  {
+    name: "調理師免許",
+    abbr: "調理師",
+    org: "",
+    color: "from-[#9a3412]/20 to-[#7c2d12]/10 border-[#9a3412]/30 text-[#9a3412]",
+  },
+  {
+    name: "ふぐ処理師",
+    abbr: "ふぐ",
+    org: "",
+    color: "from-[#9a3412]/20 to-[#7c2d12]/10 border-[#9a3412]/30 text-[#9a3412]",
+  },
 ];
 
 export default function Certifications() {
@@ -42,7 +60,7 @@ export default function Certifications() {
             >
               <div className="text-2xl font-bold mb-2">{c.abbr}</div>
               <p className="text-sm font-medium leading-snug mb-2">{c.name}</p>
-              <p className="text-xs opacity-60">{c.org}</p>
+              {c.org && <p className="text-xs opacity-60">{c.org}</p>}
             </div>
           ))}
         </div>

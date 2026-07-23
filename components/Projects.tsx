@@ -55,7 +55,7 @@ export default function Projects() {
             >
               {p.wip && (
                 <span className="text-xs bg-yellow-500/15 text-yellow-700 border border-yellow-500/40 rounded-full px-2 py-0.5 w-fit mb-3">
-                  WIP
+                  進行中
                 </span>
               )}
               <h3 className="text-lg font-semibold text-[#292524] mb-2">{p.title}</h3>

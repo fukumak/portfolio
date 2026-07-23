@@ -20,7 +20,10 @@ export default function Contact() {
           />
         </div>
         <h3 className="text-lg font-semibold text-[#292524]">Fukumoto</h3>
-        <p className="text-[#292524]/50 text-sm mb-6">GitHub: @fukumak</p>
+        <p className="text-[#292524]/50 text-sm mb-4">GitHub: @fukumak</p>
+        <p className="text-[#292524] font-bold text-sm leading-relaxed mb-6 whitespace-pre-line">
+          {"現場で培った知識を活かしつつ、AIで新しいものづくりを楽しんでいます。\n日々の業務の中で見つけた課題を、自動化や効率化ツールとして形にするのが好きです。"}
+        </p>
 
         <div className="flex gap-4 justify-center">
           <a
