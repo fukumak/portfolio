@@ -1,7 +1,15 @@
+const pastCareer = [
+  "実家が中華料理屋",
+  "調理師専門学校を卒業",
+  "ミシュラン星付き料亭で修行",
+  "地鶏居酒屋の店長を経験",
+  "30歳でIT業界へ転職",
+];
+
 const duties = [
-  "機器全般の管理・保守",
-  "インフラ・セキュリティ監視",
-  "各種権限の管理",
+  "MDMによる社内デバイス（PC・スマホ等）の一元管理",
+  "インフラ・セキュリティ監視、脆弱性管理・ログ分析",
+  "インシデント対応、各種システムのアカウント権限管理",
   "ネットワーク疎通確認・トラブルシューティング",
 ];
 
@@ -24,7 +32,7 @@ const achievements: {
     result: "手作業での集計を排除したことでヒューマンエラーを防止し、作業工数の大幅な削減に貢献。",
   },
   {
-    title: "キッティング自動化ツールの開発・改修",
+    title: "キッティング自動化ツールの改修・機能改善",
     description: "1回で最大7台まで同時キッティングが可能な自動化ツールのスクリプト改修・機能改善を実施。",
     result: "作業時間の大幅な短縮と、設定ミスの削減（品質向上）に大きく貢献。",
   },
@@ -34,6 +42,17 @@ const achievements: {
       "多数のExcelファイルによる煩雑な入出庫管理から脱却するため、新たな入出庫管理システムの構築を推進中。",
     result: "データの分散と入力ミスを解消し、正確な入出庫ログの記録によるガバナンスと管理体制の強化を見込む。",
     ongoing: true,
+  },
+  {
+    title: "人事異動に伴うアカウント・デバイス管理の自動化",
+    description:
+      "ETLツールとVBAを活用し、人事異動データから異動者を自動抽出する仕組みを構築。",
+    result: "アカウント権限やデバイスの棚卸し漏れを防止し、確認・対応にかかる手間を大幅に削減。",
+  },
+  {
+    title: "業務マニュアルの整備",
+    description: "誰が見ても迷わず実施できるよう、各業務の手順を体系化したマニュアルを作成。",
+    result: "業務の属人化を解消し、作業の効率化とヒューマンエラーの軽減に貢献。",
   },
 ];
 
@@ -46,8 +65,27 @@ export default function WorkHistory() {
         </h2>
         <p className="text-[#292524]/60 text-center mb-16">Career</p>
 
+        {/* 過去のキャリア */}
+        <div className="relative border-l border-[#292524]/10 pl-8 mb-12 max-w-2xl mx-auto md:mx-0 md:pl-0 md:border-l-0 md:grid md:grid-cols-[140px_1fr] md:gap-6">
+          <div className="md:text-right mb-4 md:mb-0">
+            <span className="text-[#292524]/40 text-sm font-mono">これまで</span>
+            <p className="text-[#292524]/60 text-sm mt-1">料理人からの転身</p>
+          </div>
+          <div className="relative border-l border-[#292524]/15 md:pl-8">
+            <ul className="space-y-6">
+              {pastCareer.map((step) => (
+                <li key={step} className="relative pl-6">
+                  <span className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-[#292524]/30 -translate-x-1/2" />
+                  <span className="text-[#292524]/70 text-sm">{step}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* 現在 */}
         <div className="relative border-l border-[#292524]/10 md:ml-0 md:border-l-0">
-          <div className="md:grid md:grid-cols-[200px_1fr] gap-8 md:pr-4">
+          <div className="md:grid md:grid-cols-[140px_1fr] gap-6 md:pr-4">
             <div className="md:text-right">
               <span className="text-[#b45309] text-sm font-mono">現在</span>
               <p className="text-[#292524]/60 text-sm mt-1">現職</p>
@@ -57,7 +95,7 @@ export default function WorkHistory() {
 
               <div className="bg-[#292524]/5 border border-[#292524]/10 rounded-2xl p-6 mb-6">
                 <h3 className="text-lg font-semibold text-[#292524] mb-4">インフラ・セキュリティエンジニア</h3>
-                <ul className="space-y-2">
+                <ul className="grid sm:grid-cols-2 gap-2">
                   {duties.map((d) => (
                     <li key={d} className="text-[#292524]/70 text-sm flex gap-2">
                       <span className="text-[#d97706] mt-0.5">▸</span>
@@ -70,7 +108,7 @@ export default function WorkHistory() {
               <h4 className="text-sm font-semibold text-[#b45309] mb-4 uppercase tracking-wider">
                 業務改善・プロジェクト実績
               </h4>
-              <div className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 {achievements.map((a) => (
                   <div
                     key={a.title}
