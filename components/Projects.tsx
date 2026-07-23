@@ -4,25 +4,33 @@ const projects: {
   tags: string[];
   github?: string;
   demo?: string;
+  pdf?: string;
   wip?: boolean;
 }[] = [
   {
     title: "このポートフォリオサイト",
-    desc: "Next.js + Tailwind CSS で構築した個人ポートフォリオ。ClaudeCodeと共同開発。",
+    desc: "Next.js + Tailwind CSS で構築した個人ポートフォリオ。\nClaudeCodeと共同開発。",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "ClaudeCode"],
     github: "https://github.com/fukumak/portfolio",
     wip: false,
   },
   {
     title: "マニュアル作成ツール",
-    desc: "「ブロック」を組み合わせてステップ形式の手順書を作成できるWebアプリ。ドラッグ&ドロップでの並び替え、インライン編集、プレビュー表示に対応。",
+    desc: "「ブロック」を組み合わせてステップ形式の手順書を作成できるWebアプリ。\nドラッグ&ドロップでの並び替え、インライン編集、プレビュー表示に対応。",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     demo: "https://manual-tool-murex.vercel.app/",
     wip: true,
   },
   {
+    title: "WordPressポートフォリオサイト",
+    desc: "WordPressで構築した個人ポートフォリオサイト。ブログ機能とカテゴリ分類を備え、記事の投稿・整理ができる構成。\nローカル環境での構築・検証のため、PDFのみ公開。",
+    tags: ["WordPress", "PHP", "MySQL"],
+    pdf: "/WordPress.pdf",
+    wip: false,
+  },
+  {
     title: "ポモドーロタイマー",
-    desc: "作業中に適切なインターバルを取ることで集中力を維持したいという課題感から自作。タスクごとに時間を区切って管理できるようになり、業務を効率的に進められるように。円形プログレスリング・自動モード切替・セッション履歴など搭載。HTML/CSS/JS のみで動作。",
+    desc: "作業中に適切なインターバルを取ることで集中力を維持したいという課題感から自作。\nタスクごとに時間を区切って管理できるようになり、業務を効率的に進められるように。\n円形プログレスリング・自動モード切替・セッション履歴など搭載。\nHTML/CSS/JS のみで動作。",
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/fukumak/pomodoro-timer",
     demo: "https://fukumak.github.io/pomodoro-timer",
@@ -51,7 +59,7 @@ export default function Projects() {
                 </span>
               )}
               <h3 className="text-lg font-semibold text-[#292524] mb-2">{p.title}</h3>
-              <p className="text-[#292524]/70 text-sm leading-relaxed flex-1">{p.desc}</p>
+              <p className="text-[#292524]/70 text-sm leading-relaxed flex-1 whitespace-pre-line">{p.desc}</p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {p.tags.map((t) => (
                   <span
@@ -81,6 +89,16 @@ export default function Projects() {
                     className="text-xs text-[#d97706] hover:text-[#292524] transition-colors"
                   >
                     Demo →
+                  </a>
+                )}
+                {p.pdf && (
+                  <a
+                    href={p.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-[#d97706] hover:text-[#292524] transition-colors"
+                  >
+                    資料を見る →
                   </a>
                 )}
               </div>
