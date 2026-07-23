@@ -47,7 +47,7 @@ export default function WorkHistory() {
         <p className="text-[#292524]/60 text-center mb-16">Career</p>
 
         <div className="relative border-l border-[#292524]/10 md:ml-0 md:border-l-0">
-          <div className="md:grid md:grid-cols-[200px_1fr] gap-8">
+          <div className="md:grid md:grid-cols-[200px_1fr] gap-8 md:pr-4">
             <div className="md:text-right">
               <span className="text-[#b45309] text-sm font-mono">現在</span>
               <p className="text-[#292524]/60 text-sm mt-1">現職</p>
