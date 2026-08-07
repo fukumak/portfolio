@@ -15,6 +15,14 @@ const projects: {
     wip: false,
   },
   {
+    title: "機器管理システム（AssetFlow）",
+    desc: "Excelで分散管理されていた機器台帳を1つのWebアプリに集約する試作。\nタブレット・業務携帯・モニターなど機器種別ごとに管理表を作成でき、在庫／設置中／故障／修理中などのステータスを画面上で更新。\n「誰が・いつ・どの状態に・なぜ変更したか」を変更ログとして自動で残し、入出庫の履歴を追跡できる。\n資産番号・電話番号・店舗名での横断検索、店舗マスタ、表示カラムのカスタマイズにも対応。",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/fukumak/device-history",
+    demo: "https://fukumak.github.io/device-history/",
+    wip: true,
+  },
+  {
     title: "マニュアル作成ツール",
     desc: "「ブロック」を組み合わせてステップ形式の手順書を作成できるWebアプリ。\nドラッグ&ドロップでの並び替え、インライン編集、プレビュー表示に対応。",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
