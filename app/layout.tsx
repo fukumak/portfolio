@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Fukumoto | Portfolio",
-  description: "インフラ・セキュリティ × AI開発 × IT教育発信エンジニアのポートフォリオ",
+  description:
+    "インフラ・セキュリティ × AI開発 × 業務改善。現場で培ったインフラ・セキュリティの知識とAI開発を組み合わせ、業務改善ツールなどを開発しています。",
 };
 
 export default function RootLayout({
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ja"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       style={{ backgroundColor: "#fdf8f1", color: "#292524" }}
     >
