@@ -31,7 +31,8 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #d97706 0%, #b45309 50%, #d97706 100%);
+  /* 明るい背景でもコントラスト比3:1以上を保てるトーンに調整（見出しは大きな文字のため3:1が基準） */
+  background: linear-gradient(135deg, #b45309 0%, #92400e 50%, #b45309 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -43,4 +44,30 @@ html {
 .card-hover:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(217, 119, 6, 0.25);
+}
+
+/* OS側で「視差効果を減らす」を有効にしている利用者には、動きを出さない。
+   スムーススクロール・フェードイン・バウンスがめまいや不快感の原因になり得るため。 */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-fade-in-up {
+    opacity: 1;
+    transform: none;
+  }
+
+  .card-hover:hover {
+    transform: none;
+  }
 }

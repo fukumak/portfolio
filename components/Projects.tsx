@@ -53,7 +53,7 @@ export default function Projects() {
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">プロジェクト</span>
         </h2>
-        <p className="text-[#292524]/60 text-center mb-16">Projects</p>
+        <p className="text-[#292524]/70 text-center mb-16">Projects</p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
@@ -72,7 +72,7 @@ export default function Projects() {
                 {p.tags.map((t) => (
                   <span
                     key={t}
-                    className="text-xs px-2 py-1 bg-[#d97706]/10 text-[#d97706] border border-[#d97706]/20 rounded-full"
+                    className="text-xs px-2 py-1 bg-[#d97706]/10 text-[#92400e] border border-[#d97706]/20 rounded-full"
                   >
                     {t}
                   </span>
@@ -84,7 +84,7 @@ export default function Projects() {
                     href={p.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#292524]/50 hover:text-[#d97706] transition-colors"
+                    className="text-xs text-[#292524]/70 hover:text-[#92400e] transition-colors"
                   >
                     GitHub →
                   </a>
@@ -94,7 +94,7 @@ export default function Projects() {
                     href={p.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#d97706] hover:text-[#292524] transition-colors"
+                    className="text-xs text-[#92400e] hover:text-[#292524] transition-colors"
                   >
                     Demo →
                   </a>
@@ -104,7 +104,7 @@ export default function Projects() {
                     href={p.pdf}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#d97706] hover:text-[#292524] transition-colors"
+                    className="text-xs text-[#92400e] hover:text-[#292524] transition-colors"
                   >
                     資料を見る →
                   </a>
@@ -115,7 +115,7 @@ export default function Projects() {
 
           {/* Placeholder card */}
           <div className="border border-dashed border-[#292524]/20 rounded-2xl p-6 flex flex-col items-center justify-center text-center min-h-[200px]">
-            <p className="text-[#292524]/40 text-sm">今後追加予定</p>
+            <p className="text-[#292524]/70 text-sm">今後追加予定</p>
           </div>
         </div>
       </div>

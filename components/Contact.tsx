@@ -7,7 +7,7 @@ export default function Contact() {
       <h2 className="text-3xl font-bold mb-2 text-center">
         <span className="gradient-text">リンク</span>
       </h2>
-      <p className="text-[#292524]/60 text-center mb-16">Links</p>
+      <p className="text-[#292524]/70 text-center mb-16">Links</p>
 
       <div className="max-w-sm mx-auto bg-[#292524]/5 border border-[#292524]/10 rounded-2xl p-8 flex flex-col items-center text-center">
         <div className="w-24 h-24 rounded-full overflow-hidden bg-[#292524]/10 mb-5 relative">
@@ -20,7 +20,7 @@ export default function Contact() {
           />
         </div>
         <h3 className="text-lg font-semibold text-[#292524]">Fukumoto</h3>
-        <p className="text-[#292524]/50 text-sm mb-4">GitHub: @fukumak</p>
+        <p className="text-[#292524]/70 text-sm mb-4">GitHub: @fukumak</p>
         <p className="text-[#292524] font-bold text-sm leading-relaxed mb-6 whitespace-pre-line">
           {"現場で培った知識を活かしつつ、AIで新しいものづくりを楽しんでいます。\n日々の業務の中で見つけた課題を、自動化や効率化ツールとして形にするのが好きです。"}
         </p>

@@ -63,13 +63,13 @@ export default function WorkHistory() {
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">キャリア</span>
         </h2>
-        <p className="text-[#292524]/60 text-center mb-16">Career</p>
+        <p className="text-[#292524]/70 text-center mb-16">Career</p>
 
         {/* 過去のキャリア */}
         <div className="relative border-l border-[#292524]/10 pl-8 mb-12 max-w-2xl mx-auto md:mx-0 md:pl-0 md:border-l-0 md:grid md:grid-cols-[140px_1fr] md:gap-6">
           <div className="md:text-right mb-4 md:mb-0">
-            <span className="text-[#292524]/40 text-sm font-mono">これまで</span>
-            <p className="text-[#292524]/60 text-sm mt-1">料理人からの転身</p>
+            <span className="text-[#292524]/70 text-sm font-mono">これまで</span>
+            <p className="text-[#292524]/70 text-sm mt-1">料理人からの転身</p>
           </div>
           <div className="relative border-l border-[#292524]/15 md:pl-8">
             <ul className="space-y-6">
@@ -87,8 +87,8 @@ export default function WorkHistory() {
         <div className="relative border-l border-[#292524]/10 md:ml-0 md:border-l-0">
           <div className="md:grid md:grid-cols-[140px_1fr] gap-6 md:pr-4">
             <div className="md:text-right">
-              <span className="text-[#b45309] text-sm font-mono">現在</span>
-              <p className="text-[#292524]/60 text-sm mt-1">現職</p>
+              <span className="text-[#92400e] text-sm font-mono">現在</span>
+              <p className="text-[#292524]/70 text-sm mt-1">現職</p>
             </div>
             <div className="ml-8 md:ml-0 relative">
               <div className="absolute -left-[41px] md:hidden top-6 w-3 h-3 rounded-full bg-[#d97706]" />
@@ -98,14 +98,14 @@ export default function WorkHistory() {
                 <ul className="grid sm:grid-cols-2 gap-2">
                   {duties.map((d) => (
                     <li key={d} className="text-[#292524]/70 text-sm flex gap-2">
-                      <span className="text-[#d97706] mt-0.5">▸</span>
+                      <span className="text-[#92400e] mt-0.5">▸</span>
                       {d}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <h4 className="text-sm font-semibold text-[#b45309] mb-4 uppercase tracking-wider">
+              <h4 className="text-sm font-semibold text-[#92400e] mb-4 uppercase tracking-wider">
                 業務改善・プロジェクト実績
               </h4>
               <div className="grid md:grid-cols-2 gap-4">
@@ -123,7 +123,7 @@ export default function WorkHistory() {
                       )}
                     </div>
                     <p className="text-[#292524]/70 text-sm leading-relaxed mb-2">{a.description}</p>
-                    <p className="text-[#d97706] text-sm leading-relaxed">→ {a.result}</p>
+                    <p className="text-[#92400e] text-sm leading-relaxed">→ {a.result}</p>
                   </div>
                 ))}
               </div>

@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
 
       <div className="relative animate-fade-in-up">
-        <p className="text-[#d97706] font-mono text-sm mb-4 tracking-widest uppercase">
+        <p className="text-[#92400e] font-mono text-sm mb-4 tracking-widest uppercase">
           Welcome to my portfolio
         </p>
         <h1 className="text-5xl md:text-7xl font-bold mb-4">
@@ -21,7 +21,7 @@ export default function Hero() {
         <p className="text-xl md:text-2xl text-[#292524]/80 font-bold mb-10">
           インフラ・セキュリティ × AI開発 × 業務改善
         </p>
-        <p className="text-[#292524]/60 max-w-lg mx-auto mb-10 leading-relaxed">
+        <p className="text-[#292524]/70 max-w-lg mx-auto mb-10 leading-relaxed">
           現場で培ったインフラ・セキュリティの知識とAI開発を組み合わせ、
           業務改善ツールなどを開発しています。
         </p>
@@ -34,14 +34,14 @@ export default function Hero() {
           </a>
           <a
             href="#links"
-            className="px-6 py-3 border border-[#292524]/15 hover:border-[#d97706] text-[#292524]/70 hover:text-[#d97706] rounded-full font-medium transition-colors"
+            className="px-6 py-3 border border-[#292524]/15 hover:border-[#d97706] text-[#292524]/70 hover:text-[#92400e] rounded-full font-medium transition-colors"
           >
             Links
           </a>
         </div>
 
         {/* Social links */}
-        <div className="flex gap-6 justify-center mt-10 text-[#292524]/50">
+        <div className="flex gap-6 justify-center mt-10 text-[#292524]/70">
           <a
             href="https://github.com/fukumak"
             target="_blank"
@@ -54,7 +54,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll hint */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-[#292524]/30 text-xs">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-[#292524]/70 text-xs">
         ↓ scroll
       </div>
     </section>

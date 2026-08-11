@@ -23,7 +23,7 @@ export default function About() {
       <h2 className="text-3xl font-bold mb-2 text-center">
         <span className="gradient-text">私について</span>
       </h2>
-      <p className="text-[#292524]/60 text-center mb-16">About Me</p>
+      <p className="text-[#292524]/70 text-center mb-16">About Me</p>
 
       <div className="grid md:grid-cols-3 gap-6">
         {strengths.map((s) => (

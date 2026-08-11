@@ -33,7 +33,7 @@ export default function Skills() {
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">スキル</span>
         </h2>
-        <p className="text-[#292524]/60 text-center mb-16">Skills</p>
+        <p className="text-[#292524]/70 text-center mb-16">Skills</p>
 
         <div className="grid md:grid-cols-2 gap-8">
           {categories.map((cat) => (
@@ -41,7 +41,7 @@ export default function Skills() {
               key={cat.label}
               className="bg-[#292524]/5 border border-[#292524]/10 rounded-2xl p-6"
             >
-              <h3 className="text-sm font-semibold text-[#b45309] mb-4 uppercase tracking-wider">
+              <h3 className="text-sm font-semibold text-[#92400e] mb-4 uppercase tracking-wider">
                 {cat.label}
               </h3>
               <div className="flex flex-wrap gap-2">

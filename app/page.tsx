@@ -18,8 +18,8 @@ export default function Home() {
       <WorkHistory />
       <Certifications />
       <Contact />
-      <footer className="text-center py-8 text-[#292524]/40 text-sm border-t border-[#292524]/10">
-        © 2025 Fukumoto. Built with Next.js & ClaudeCode.
+      <footer className="text-center py-8 text-[#292524]/70 text-sm border-t border-[#292524]/10">
+        © {new Date().getFullYear()} Fukumoto. Built with Next.js & ClaudeCode.
       </footer>
     </div>
   );

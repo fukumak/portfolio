@@ -12,10 +12,35 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "Fukumoto | Portfolio";
+const description =
+  "インフラ・セキュリティ × AI開発 × 業務改善。現場で培ったインフラ・セキュリティの知識とAI開発を組み合わせ、業務改善ツールなどを開発しています。";
+
+// OGP画像などの絶対URLを組み立てるための基準URL。
+// Vercelでは環境変数から自動で解決されるため、追加の設定は不要。
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? process.env.NEXT_PUBLIC_SITE_URL
+  : process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000";
+
 export const metadata: Metadata = {
-  title: "Fukumoto | Portfolio",
-  description:
-    "インフラ・セキュリティ × AI開発 × 業務改善。現場で培ったインフラ・セキュリティの知識とAI開発を組み合わせ、業務改善ツールなどを開発しています。",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: title,
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

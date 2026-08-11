@@ -1,5 +1,7 @@
 # Portfolio — Fukumoto
 
+[![CI](https://github.com/fukumak/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/fukumak/portfolio/actions/workflows/ci.yml)
+
 **インフラ・セキュリティ × AI開発 × 業務改善** をテーマにした個人ポートフォリオサイトです。
 Next.js (App Router) + TypeScript + Tailwind CSS で構築し、経歴・スキル・制作物を1ページにまとめています。
 
@@ -35,10 +37,13 @@ Next.js (App Router) + TypeScript + Tailwind CSS で構築し、経歴・スキ�
 ## ディレクトリ構成
 
 ```
+.github/workflows/
+  ci.yml         push / PR ごとに lint と build を実行
 app/
-  layout.tsx     ルートレイアウト / メタデータ / フォント読み込み
-  page.tsx       各セクションを縦に並べるだけの単一ページ
-  globals.css    テーマカラー・共通アニメーション（@theme で定義）
+  layout.tsx            ルートレイアウト / メタデータ / フォント読み込み
+  page.tsx              各セクションを縦に並べるだけの単一ページ
+  globals.css           テーマカラー・共通アニメーション（@theme で定義）
+  opengraph-image.tsx   OGP画像をビルド時に生成
 components/
   Navbar.tsx        追従ナビ・モバイルメニュー（唯一の Client Component）
   Hero.tsx          ファーストビュー
@@ -69,6 +74,26 @@ public/            画像・公開資料（PDF）
 **色をCSS変数に集約した**
 ベースカラーを `globals.css` の `:root` と `@theme` で定義し、アクセントカラー（`#d97706` 系）で統一しました。
 配色は途中でダークテーマからライトなクリーム系に全面変更しています（`fc42d3a`）。この切り替えを1コミットで完了できたのは、色の定義箇所をまとめていたためです。
+
+---
+
+## 品質面で気をつけたこと
+
+**コントラスト比を実測して調整した**
+薄いグレー（`#292524/40` = 2.35:1）やアクセント色（`#d97706` = 3.01:1）を文字色に使っていた箇所が WCAG 2.1 AA の基準（通常の文字で 4.5:1）を下回っていたため、全ての文字色を実測のうえ調整しました。
+現在は本文・リンク・キャプションのすべてが 4.5:1 以上、見出しは大きな文字の基準 3:1 以上を満たしています。
+
+**動きを減らす設定を尊重する**
+OS側で「視差効果を減らす」を有効にしている場合、スムーススクロール・フェードイン・スクロールヒントのアニメーションを無効化します（`prefers-reduced-motion`）。
+
+**キーボードとスクリーンリーダーへの対応**
+モバイルメニューの開閉ボタンに `aria-expanded` / `aria-controls` と状態に応じたラベルを設定し、Escキーでも閉じられるようにしています。`<html lang="ja">` を指定し、読み上げ言語が正しく判定されるようにしました。
+
+**CIで壊れた状態を検知する**
+push と Pull Request のたびに GitHub Actions で `npm ci` → `lint` → `build` を実行しています。ローカルでの確認漏れがそのまま公開されることを防ぐためです。
+
+**リンク共有時の見え方を用意した**
+`app/opengraph-image.tsx` で OGP 画像をビルド時に生成しています。メールやチャットにURLを貼ったときに、白紙のプレビューにならないようにするためです。
 
 ---
 

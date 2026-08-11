@@ -3,19 +3,19 @@ const certs = [
     name: "AWS Certified Cloud Practitioner",
     abbr: "CLF",
     org: "Amazon Web Services",
-    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#d97706]",
+    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#92400e]",
   },
   {
     name: "AWS Certified Solutions Architect – Associate",
     abbr: "SAA",
     org: "Amazon Web Services",
-    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#d97706]",
+    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#92400e]",
   },
   {
     name: "AWS Certified Developer – Associate",
     abbr: "DVA",
     org: "Amazon Web Services",
-    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#d97706]",
+    color: "from-[#d97706]/20 to-[#b45309]/10 border-[#d97706]/30 text-[#92400e]",
   },
   {
     name: "ITパスポート",
@@ -27,7 +27,7 @@ const certs = [
     name: "WEBライティング能力検定 1級",
     abbr: "Web1級",
     org: "",
-    color: "from-[#b45309]/20 to-[#92400e]/10 border-[#b45309]/30 text-[#b45309]",
+    color: "from-[#b45309]/20 to-[#92400e]/10 border-[#b45309]/30 text-[#92400e]",
   },
   {
     name: "調理師免許",
@@ -50,7 +50,7 @@ export default function Certifications() {
         <h2 className="text-3xl font-bold mb-2 text-center">
           <span className="gradient-text">保有資格</span>
         </h2>
-        <p className="text-[#292524]/60 text-center mb-16">Certifications</p>
+        <p className="text-[#292524]/70 text-center mb-16">Certifications</p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {certs.map((c) => (
@@ -60,7 +60,7 @@ export default function Certifications() {
             >
               <div className="text-2xl font-bold mb-2">{c.abbr}</div>
               <p className="text-sm font-medium leading-snug mb-2">{c.name}</p>
-              {c.org && <p className="text-xs opacity-60">{c.org}</p>}
+              {c.org && <p className="text-xs text-[#292524]/70">{c.org}</p>}
             </div>
           ))}
         </div>
