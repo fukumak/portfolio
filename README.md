@@ -7,7 +7,7 @@ Next.js (App Router) + TypeScript + Tailwind CSS で構築し、経歴・スキ�
 
 | | |
 |---|---|
-| 公開サイト | （準備中） |
+| 公開サイト | https://portfolio-black-six-14.vercel.app/ |
 | 技術スタック | Next.js 16 / React 19 / TypeScript 5 / Tailwind CSS v4 |
 | ソース | このリポジトリ |
 
