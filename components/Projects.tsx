@@ -28,7 +28,7 @@ const projects: {
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/fukumak/device-history",
     demo: "https://fukumak.github.io/device-history/",
-    wip: true,
+    wip: false,
   },
   {
     title: "ログイン認証アプリ（Servlet / JSP）",
