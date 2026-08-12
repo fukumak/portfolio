@@ -26,6 +26,7 @@ const projects: {
     title: "マニュアル作成ツール",
     desc: "「ブロック」を組み合わせてステップ形式の手順書を作成できるWebアプリ。\nドラッグ&ドロップでの並び替え、インライン編集、プレビュー表示に対応。",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/fukumak/manual-tool-portfolio",
     demo: "https://manual-tool-murex.vercel.app/",
     wip: true,
   },
