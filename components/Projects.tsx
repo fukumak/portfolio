@@ -8,6 +8,14 @@ const projects: {
   wip?: boolean;
 }[] = [
   {
+    title: "マニュアル作成ツール",
+    desc: "「ブロック」を組み合わせてステップ形式の手順書を作成できるWebアプリ。手順書づくりに不慣れな人でも迷わず操作できることを最優先に、UIを作り込んだ。\n見出し・手順・画像・表・注意書き・チェックリストなど12種類のブロックに対応。ドラッグ&ドロップでの並べ替え、手順番号の自動採番（1／1-1の2階層）、編集・プレビュー・分割（スクロール同期）の3表示モードを実装。\n画像はブラウザ側で圧縮して保持し、円・矢印・テキストなどの注記を書き込める。連続した変更をひとまとめにするUndoと自動保存にも対応。\n新しいブロック種別を1箇所の登録だけで追加できる構成にし、保存層も差し替え可能な設計としている。",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "dnd-kit", "shiki"],
+    github: "https://github.com/fukumak/manual-tool-portfolio",
+    demo: "https://manual-tool-murex.vercel.app/",
+    wip: false,
+  },
+  {
     title: "このポートフォリオサイト",
     desc: "Next.js + Tailwind CSS で構築した個人ポートフォリオ。\nClaudeCodeと共同開発。",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "ClaudeCode"],
@@ -20,14 +28,6 @@ const projects: {
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/fukumak/device-history",
     demo: "https://fukumak.github.io/device-history/",
-    wip: true,
-  },
-  {
-    title: "マニュアル作成ツール",
-    desc: "「ブロック」を組み合わせてステップ形式の手順書を作成できるWebアプリ。\nドラッグ&ドロップでの並び替え、インライン編集、プレビュー表示に対応。",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/fukumak/manual-tool-portfolio",
-    demo: "https://manual-tool-murex.vercel.app/",
     wip: true,
   },
   {
