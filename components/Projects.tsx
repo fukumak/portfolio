@@ -31,6 +31,14 @@ const projects: {
     wip: true,
   },
   {
+    title: "ログイン認証アプリ（Servlet / JSP）",
+    desc: "Java の Servlet / JSP で構築した、ユーザー登録・ログイン機能のデモアプリ。\n独自の AuthFilter による保護ページのアクセス制御、HttpSession を使ったセッション管理、登録時のユーザー名重複チェックを実装。\nMaven で WAR にビルドし、Docker（Tomcat 9）でコンテナ化して Render にデプロイしている。\n※学習用のため、ユーザー情報はインメモリ保持（再起動で消去）。無料枠のため初回アクセスは起動に30秒ほどかかります。",
+    tags: ["Java", "Servlet", "JSP", "Maven", "Docker", "Tomcat"],
+    github: "https://github.com/fukumak/java-portfolio/tree/master/projects/servlet-login-app",
+    demo: "https://java-portfolio-4syj.onrender.com",
+    wip: false,
+  },
+  {
     title: "WordPressポートフォリオサイト",
     desc: "WordPressで構築した個人ポートフォリオサイト。ブログ機能とカテゴリ分類を備え、記事の投稿・整理ができる構成。\nローカル環境での構築・検証のため、PDFのみ公開。",
     tags: ["WordPress", "PHP", "MySQL"],
